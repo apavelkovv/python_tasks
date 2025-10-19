@@ -24,7 +24,7 @@ class Figure:
         if self.perimeter_calculation() < other.perimeter_calculation():
             return f"{self.name} меньше по периметру чем {other.name.lower()}"
         elif self.perimeter_calculation() > other.perimeter_calculation():
-            return f"{self.name} больше по площади чем {other.name.lower()}"
+            return f"{self.name} больше по периметру чем {other.name.lower()}"
         else:
             return (f"{self.name} равны по периметру "
                     f"с фигурой {other.name.lower()}")
