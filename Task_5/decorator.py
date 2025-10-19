@@ -8,6 +8,7 @@ def control_time(func):
         time_end = time.time()
         time_result = time_end - time_begin
         print(f'Время выполнения: {time_result:.9f} секунд')
+        return result
     return wrapper
 
 
