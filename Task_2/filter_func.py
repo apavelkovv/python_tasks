@@ -1,4 +1,6 @@
-def filter_func(func, string_arr):
+from typing import Callable, Iterable, Any
+
+def filter_func(func: Callable[[Any], bool], string_arr: Iterable[Any]):
     """Фильтрует список строк по условию, заданному функцией func."""
     filtered_list = []
     for item in string_arr:
